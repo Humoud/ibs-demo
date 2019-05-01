@@ -1,0 +1,14 @@
+Note: both scripts use Python 3
+
+done on kali:
+python3 apkSneeze.py ibs_demo_1.apk
+python3 apkSneeze.py ibs_demo_2.apk
+
+done on windows:
+python hooketh.py -p com.humoud.ibs.ibsdemo1 -c com.humoud.ibs.ibsdemo1.MainActivity
+python hooketh.py -p com.humoud.ibs.ibsdemo1 -c com.humoud.ibs.ibsdemo1.MainActivity -n 10
+python hooketh.py -p com.humoud.ibs.ibsdemo1 -c com.humoud.ibs.ibsdemo1.MainActivity -n 10 -t 1
+
+python hooketh.py -p com.humoud.ibs.ibsdemo2 -c com.humoud.ibs.ibsdemo2.Home
+python hooketh.py -p com.humoud.ibs.ibsdemo2 -c com.humoud.ibs.ibsdemo2.Home -n 9
+python hooketh.py -p com.humoud.ibs.ibsdemo2 -c java.lang.String -n 50
